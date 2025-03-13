@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+        :root{
+            --bg-color:white;
+            --text:black;
+            --white:rgb(216, 180, 180);
+
+            --active:rgb(255, 0, 0);
+            --active-dark:rgb(253, 72, 7);
+            --normal:rgb(255, 191, 191);
+        }
+
+        a{
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        body{
+            background-color: var(--bg-color);
+        }
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            background-color: var(--text);
+            position: fixed;
+            top: 0px;
+        }
+        .logo{
+            cursor: pointer;
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--active);
+            font-weight: bold;
+        }
+        .nav-links{
+            list-style: none;
+
+        }
+        .nav-links li{
+            display: inline-block;
+            padding: 0px 20px;
+
+
+        }
+        .nav-links li a{
+            font-size: 16px;
+            transition: 0.5s;
+            text-transform: uppercase;
+        }
+        .nav-links li a.active{
+            color: var(--active);
+        }
+
+        .nav-links li a:hover{
+            color: var(--active);
+        }
+
+        .action{
+            padding: 9px 25px;
+            background-color: var(--active);
+            border-radius: 50px;
+            transition: 0.5s;
+        }
+
+        .action:hover{
+            background-color: var(--active-dark);
+        }
+        #red{
+            width: 80%;
+            height: 1600px;
+            background-color: red;
+            margin-left: 10%;
+            font-size: 3rem;
+            margin-top:60px;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            }
+        .im1{
+            width: 300px;
+            height: 300px;
+            border: 7px solid black;
+            border-radius: 50%;
+            align-items: center;
+            align-content: center;
+            margin-top: 40px;
+            margin-left: 550px;
+            outline: 4px solid black;
+            outline-offset: 6px;
+        }
+        .name{
+            font-size: 5rem;
+            text-align: center;
+            text-shadow: 0px 34px 71px black;
+        }
+        .object{
+            color: aqua;
+
+        }
+
+
+        </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">yeswanth</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="">HOME</a></li>
+                <li><a href="">PRODUCT</a></li>
+                <li><a href="" class="active">ABOUT</a></li>
+                <li><a href="">DOWNLOAD</a></li>
+                <li><a href="">services</a></li>
+            </ul>
+
+        </nav>
+        <a href="#" class="action">call us</a>
+    </header>
+    <section id="red">
+        <img src="./images/user.png" alt="" class="im1">
+        <h1 class="name">yeswanth M</h1>
+        <div>
+            <h1 class="object">carrier object</h1>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur similique optio natus numquam possimus modi qui corporis, perspiciatis facere commodi aspernatur? Laudantium hic cumque reiciendis eligendi qui cupiditate nobis ut!
+
+        </div>
+    </section>
+</body>
+</html>

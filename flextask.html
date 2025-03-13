@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:url(https://wallpapercave.com/wp/wp4676582.jpg);
+            background-position:center;
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size: cover;
+            
+        }
+        .login {
+            width: 90%;
+            max-width: 700px;
+            height: fit-content;
+            max-height: 600px;
+            background-color:transparent;
+            margin: 140px auto;
+            border-radius: 30px;
+            outline-offset: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 40px;
+            gap: 20px;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 10px black;
+        }
+        .login h1 {
+            text-align: center;
+            color: rgb(217, 106, 245);
+            font-size: 3.7rem;
+            width: 100%;
+            text-shadow: 4px 5px 7px black;
+        }
+        input[type="text"],
+        input[type="password"] {
+            color: rgb(0, 0, 0);
+            background-color:transparent;
+            width: 100%;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 40px;
+            font-size: 1.5rem;
+            flex: 1 1 45%;
+        }
+        input[type="text"]:hover{
+            box-shadow: 2px 3px 15px rgb(214, 18, 244);
+            border: 3px purple;
+        }
+        input[type="password"]:hover{
+            box-shadow: 2px 3px 15px rgb(214, 18, 244);
+            border:3px purple;
+        }
+        input[type="text"]::placeholder,
+        input[type="password"]::placeholder {
+            color:black;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            height: 50px;
+            border-radius: 30px;
+            color: black;
+            font-size: 1.5rem;
+            flex: 1 1 100px;
+            background-color: transparent;
+            transition: all .3s linear;
+        }
+        button:hover{
+            box-shadow: 2px 3px 15px rgb(214, 18, 244);
+            border: 3px purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <button>submit</button>
+    </div>
+</body>
+</html>
